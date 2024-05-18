@@ -1,0 +1,261 @@
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+/*--------------------*/
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+/*colors*/
+.border-green {
+  border: 2px solid rgba(23, 157, 46, 1);
+}
+.border-blue{
+  border: 2px solid rgba(1, 119, 184, 1);
+}
+.border-yellow{
+  border: 2px solid rgba(245, 175, 35, 1);
+}
+.border-red{
+  border: 2px solid rgba(240, 46, 44, 1);
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+}
+.content {
+  flex: 1 1 auto;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.service_cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 30px;
+  max-width: 1380px;
+  width: 100%;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 424px;
+  width: 100%;
+}
+.card_img {
+  margin: 24px 24px 24px 306px;
+}
+.icon3{
+  transform: translateX(-30px);
+}
+.icon6{
+  transform: translateX(-5px);
+}
+.card_img img {
+  width: 94px;
+  height: 100px;
+}
+.info {
+  margin: 0 24px 24px 24px;
+}
+.info h2 {
+  font-size: 36px;
+  font-weight: 600;
+  font-family: Inter, sans-serif;
+  line-height: 43.2px;
+  margin-bottom: 24px;
+  color: rgba(24, 24, 51, 1);
+}
+.services {
+  margin-left: 36px;
+}
+.services li {
+  font-family: Inter, sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  color: rgba(45, 45, 45, 1);
+  margin-bottom: 12px;
+}
+.link {
+  margin-top: auto;
+  width: fit-content;
+  margin: 24px 24px 24px 280px;
+  border-bottom: 1px solid rgba(45, 45, 45, 1);
+}
+.link a {
+  font-size: 24px;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  line-height: 36px;
+  color: black;
+}
+@media  (max-width: 992px){
+  .service_cards {
+    max-width: 750px;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 300px;
+    width: 100%;
+  }
+  .card_img {
+    margin: 24px 24px 24px 190px;
+  }
+  .link {
+    margin-top: auto;
+    width: fit-content;
+    margin: 24px 24px 24px 150px;
+    border-bottom: 1px solid rgba(45, 45, 45, 1);
+  }
+  .link a {
+    font-size: 24px;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+    line-height: 36px;
+    color: black;
+  }
+}
+@media  (max-width: 749px){
+  .service_cards {
+    max-width: 480px;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 300px;
+    width: 100%;
+  }
+  .card_img {
+    margin: 24px 24px 24px 190px;
+  }
+  .link {
+    margin-top: auto;
+    width: fit-content;
+    margin: 24px 24px 24px 150px;
+    border-bottom: 1px solid rgba(45, 45, 45, 1);
+  }
+  .link a {
+    font-size: 24px;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+    line-height: 36px;
+    color: black;
+  }
+}
+@media  (max-width: 479px){
+  .service_cards {
+    max-width: 320px;
+  }
+  .icon{
+    width: 80px;
+    height: 70px;
+  }
+  .card_img {
+    margin: 24px 24px 24px 170px;
+  }
+  .card_img img {
+    width: 74px;
+    height: 80px;
+  }
+  .info {
+    margin: 0 24px 24px 24px;
+  }
+  .info h2 {
+    font-size: 28px;
+    margin-bottom: 18px;
+  }
+  .services {
+    margin-left: 36px;
+  }
+  .services li {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+  .link {
+    margin: 24px 24px 24px 140px;
+  }
+  .link a {
+    font-size: 18px;
+  }
+}
